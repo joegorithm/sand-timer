@@ -43,10 +43,10 @@ const sandTimerTimeRemaining = document.querySelector('.sand-timer-time-remainin
 const sandTimerTimePassed = document.querySelector('.sand-timer-time-passed');
 
 
-// document.addEventListener("DOMContentLoaded", function() {
+
 // When .sand-timer-container is clicked, start the sand timer
 document.querySelector('.sand-timer-container').addEventListener('click', function() {
-    const timeSet = 3 * 1000;
+    const timeSet = 5 * 1000;
     const totalTime = timeSet + 500; // 500ms for the initial 180 degree rotation
     let totalTimePassed = 0;
     let totalTimeRemaining = totalTime;
@@ -54,13 +54,11 @@ document.querySelector('.sand-timer-container').addEventListener('click', functi
     let timeRemaining = timeSet;
     let flowStartEndDuration = 500;
     let topSandDuration = timeSet - flowStartEndDuration;
-    let topSandPassed = 0;
+    // let topSandPassed = 0;
     let bottomSandDuration = timeSet - flowStartEndDuration;
-    let bottomSandPassed = 0;
+    // let bottomSandPassed = 0;
     let hasFlipped = false;
 
-
-    // Update the timer every 1ms
     const fps = 60; // frames per second
     const speed = 1000 / fps;
     const timerInterval = setInterval(function() {
@@ -97,7 +95,7 @@ document.querySelector('.sand-timer-container').addEventListener('click', functi
             sandTimerSandTop.element.style.transition = 'none';
             sandTimerSandTop.element.style.top = sandTimerSandTop.topR1P1;
 
-            sandTimerSandFalling.element.style.bottom = 'sandTimerSandFalling.bottomR1P1';
+            sandTimerSandFalling.element.style.bottom = sandTimerSandFalling.bottomR1P1;
 
             sandTimerSandBottom.element.style.transition = 'bottom 500ms ease';
             sandTimerSandBottom.element.style.bottom = sandTimerSandBottom.bottomR1P1;

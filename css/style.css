@@ -243,30 +243,34 @@ body {
     background-color: var(--sand-color);
 }
 
-
-
 .sand-timer-time {
     position: absolute;
     margin: auto;
     left: 0;
     right: 0;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Nunito', monospace;
+    font-variant-numeric: tabular-nums;
     font-size: min(13vw, 13vh);
-    font-weight: 500;
+    font-weight: 800;
     text-align: center;
+    color: rgba(0, 0, 0, 0.302);
+    
+    /* color: rgb(255, 255, 255); */
+    /* mix-blend-mode: difference; */
+}
+
+.sand-timer-time-bottom {
+    bottom: 15%;
+}
+
+.sand-timer-time-top {
+    top: 15%;
 }
 
 .sand-timer-time-remaining {
     color: rgba(255, 255, 255, 0.792);
-    bottom: 15%;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.sand-timer-time-passed {
-    color: rgba(0, 0, 0, 0.302);
-    top: 15%;
-}
-
 
 
 .sand-timer-base {

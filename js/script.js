@@ -54,9 +54,7 @@ document.querySelector('.sand-timer-container').addEventListener('click', functi
     let timeRemaining = timeSet;
     let flowStartEndDuration = 500;
     let topSandDuration = timeSet - flowStartEndDuration;
-    // let topSandPassed = 0;
     let bottomSandDuration = timeSet - flowStartEndDuration;
-    // let bottomSandPassed = 0;
     let hasFlipped = false;
 
     const fps = 60; // frames per second
